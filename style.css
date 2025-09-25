@@ -1,0 +1,50 @@
+.berita1 {
+    color: rgb(9, 39, 235);
+}
+.berita2 {
+    color: rgb(166, 202, 234);
+}
+.sukses3 {
+    color: rgb(220, 15, 32);
+}
+/* ol li b {
+    color: rgb(32, 206, 49);
+    font-size: 20px;
+    font-family: 'Courier New', Courier, monospace;
+    font-weight: 300;
+    font-display: swap;
+} */
+
+body {
+    background-color: rgb(253, 253, 253);
+}
+
+.dia {
+    color: rgb(40, 43, 218);
+    font-size: small;
+}
+
+.ini {
+    color: rgb(255, 30, 0);
+    font-size: small;
+}
+
+.itu {
+    color: rgb(15, 254, 119);
+    font-size: small;
+    
+}
+
+.judul {
+    font-size: 20px;
+    font-weight: 300;
+    font-display: swap;
+}
+
+
+.materiberita2 {
+    font-size: 16px;
+    font-weight: 300;
+    font-display: swap;
+    background-color: bisque;
+}

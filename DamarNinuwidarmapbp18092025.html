@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pendaftaran Pekerjaan Damar</title>
+</head>
+<body>
+    <h1 align="center">Formulir Pendaftaran Pekerjaan</h1>
+    <form action="#" method="post" enctype="multipart/form-data">
+
+        <fieldset>
+            <legend>Data Pribadi</legend>
+            <label for="nama">Nama Lengkap:</label>
+            <input type="text" id="nama" name="nama" placeholder="Masukkan nama lengkap" required>
+            
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" placeholder="contoh@email.com" required>
+            
+            <label for="telepon">Nomor Telepon:</label>
+            <input type="tel" id="telepon" name="telepon" placeholder="08xxxxxxxxxx">
+            
+            <label for="tanggal_lahir">Tanggal Lahir:</label>
+            <input type="date" id="tanggal_lahir" name="tanggal_lahir">
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Pekerjaan yang Diminati</legend>
+            <label for="pekerjaan">Pilih Posisi:</label>
+            <select id="pekerjaan" name="pekerjaan" required>
+                <option value="">-- Pilih Posisi --</option>
+                <option value="admin">Teknik</option>
+                <option value="kasir">Mekanik</option>
+                <option value="gudang">Staff Gudang</option>
+                <option value="driver">Jaringan</option>
+                <option value="sales">Tim Promosi</option>
+                <option value="it">Staff Kelistrikan</option>
+            </select>
+            
+            <label for="gaji">Permintaan Gaji (Rp):</label>
+            <input type="number" id="gaji" name="gaji" placeholder="Contoh: 5000000" min="0">
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Pengalaman Kerja</legend>
+            <label>Riwayat Pekerjaan:</label>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Perusahaan</th>
+                        <th>Posisi</th>
+                        <th>Periode</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td><input type="text" placeholder="Nama perusahaan" name="perusahaan1"></td>
+                        <td><input type="text" placeholder="Jabatan" name="jabatan1"></td>
+                        <td><input type="text" placeholder="Tahun" name="tahun1"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" placeholder="Nama perusahaan" name="perusahaan2"></td>
+                        <td><input type="text" placeholder="Jabatan" name="jabatan2"></td>
+                        <td><input type="text" placeholder="Tahun" name="tahun2"></td>
+                    </tr>
+                </tbody>
+            </table>
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Upload Berkas</legend>
+            <label for="cv">Upload CV (PDF/DOC):</label>
+            <input type="file" id="cv" name="cv" accept=".pdf,.doc,.docx">
+            <hr>
+            <label for="foto">Upload Foto:</label>
+            <input type="file" id="foto" name="foto" accept="image/*">
+        </fieldset>
+
+
+        <fieldset>
+            <legend>Pesan Tambahan</legend>
+            <textarea id="pesan" name="pesan" rows="4" placeholder="Tuliskan alasan Anda melamar pekerjaan ini."></textarea>
+        </fieldset>
+
+        <button type="submit">Kirim Lamaran</button>
+        <button type="reset">Reset Form</button>
+    </form>
+</body>
+</html>
